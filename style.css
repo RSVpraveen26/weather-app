@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1500px;
+  background: rgb(223, 15, 223);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 25px;
+  margin-left: 400px;
+  margin-right: 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+}
+
+.main-img {
+  grid-column: span 2;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.box-1, .box-2 {
+  background:rgb(247, 116, 188);
+  border-radius: 18px;
+  padding: 20px;
+  color: #0e0d0d;
+}
+
+.heng, .heng2 {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.rect {
+  width: 14px;
+  height: 6px;
+  background: #070707;
+  border-radius: 4px;
+  opacity: 0.7;
+}
+
+.main {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.enter {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.submit {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: #ffce00;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.data-d {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.hallow {
+  background: rgba(0,0,0,0.3);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#temp {
+  font-size: 64px;
+}
+
+.t-real {
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+.temp-1 {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.bg-blue {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
